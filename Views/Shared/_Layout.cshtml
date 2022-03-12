@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication1</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/style-starter.css" rel="stylesheet" />
+    <link href="~/css/style-starter1.css" rel="stylesheet" />
+    <a href="~/fonts/fontawesome-webfont.eot"></a>
+    <a href="~/fonts/fontawesome-webfont.ttf"></a>
+    <a href="~/fonts/fontawesome-webfont.woff"></a>
+    <a href="~/fonts/fontawesome-webfont.woff2"></a>
+    <a href="~/fonts/FontAwesome.otf"></a>
+    <script src="~/js/all.js"></script>
+    <script src="~/js/app.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery-1.7.2.js"></script>
+    <script src="~/js/jquery-3.3.1.min.js"></script>
+    <script src="~/js/jquery.prettyPhoto.js"></script>
+    <script src="~/js/jquery.quicksand.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/script.js"></script>
+</head>
+<body>
+
+    <!--/top-header-content-->
+    <section class="w3l-top-header-content">
+        <div class="hny-top-menu">
+            <div class="top-hd">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="social-top col-lg-6">
+                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#"><span class="fa fa-instagram"></span></a> </li>
+                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fa fa-vimeo"></span></a> </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-linkedin"></span>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="accounts col-lg-6">
+                            <li class="top_li">
+                                <span class="fa fa-mobile"></span><a href="tel:+142 5897555">
+                                    +62 1111111111
+                                </a>
+                            </li>
+
+                            <li class="top_li">
+                                <span class="fa fa-envelope-o"></span><a href="mailto:mrizkywidodo@gmail.com">Need help? Contact us via email</a>
+
+                            </li>
+                            <li class="top_li1"><span class="fa fa-map-marker"></span> 123 Surabaya Timur </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/nav-->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><span class="fa fa-podcast" aria-hidden="true"></span> <label class="lohny">H</label>andler</a> -->                  
+    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+        <img src="~/images/LOGO.png" alt="Your logo" title="Helpy" style="height:100px;" />
+       </a>
+    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Profile">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Company">Company</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Services">Services</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Collaboration">Collaboration</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+            <!--//nav-->
+        </div>
+
+    </section>
+    <!--//top-header-content-->
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <section class="w3l-footer-22-main">
+        <!-- footer-22 -->
+        <div class="footer-hny py-5">
+            <div class="container py-lg-4">
+                <div class="sub-columns row">
+                    <div class="sub-one-left col-lg-4 col-md-6">
+                        <h6>About </h6>
+                        <p>Jl. Airlangga No.4 - 6, Airlangga<br /> Kec. Gubeng, Kota SBY, Jawa Timur 60115<br /> Email info@test.com</p>
+
+                    </div>
+                    <div class="sub-two-right col-lg-4 col-md-6 my-md-0 my-5">
+                        <h6>Quick links</h6>
+                        <div class="footer-hny-ul">
+                            <ul>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Profile">Profile</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Company">Company</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Services">Services</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Collaboration">Collaboration</a></li>
+                            </ul>                    
+                        </div>
+                    </div>
+
+                    <div class="sub-one-left col-lg-4 col-md-6 mt-lg-0 mt-md-5">
+                        <h6>Subscribe to our Newsletter </h6>
+                        <form action="#" method="post" class="footer-newsletter">
+                            <div class="">
+                                <input type="email" name="email" class="form-input" placeholder="Enter your email.." />
+                            </div>
+                            <button type="submit" class="btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- //titels-5 -->
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
